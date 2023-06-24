@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlIO Version="v1.0.0">
+  <Properties SyncReset="true" CycleTime="10" />
+  <Diagram DiagramPosition="-790,100" DiagramScale="0.90702947845805">
+    <NodeData Key="2" Location="-525 535" NodeType="InputBit" MemMapAddress="0" NodeDescription="Fill" />
+    <NodeData Key="5" Location="375 590" NodeType="OutputBit" MemMapAddress="3" NodeDescription="Fill valve" />
+    <NodeData Key="9" Location="-590 395" NodeType="InputBit" MemMapAddress="1" NodeDescription="Discharge" />
+    <NodeData Key="11" Location="240 205" NodeType="OutputBit" MemMapAddress="4" NodeDescription="Discharge valve" />
+    <NodeData Key="12" Location="-405 330" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="13" Location="555 620" NodeType="OutputBit" MemMapAddress="0" NodeDescription="Filling" />
+    <NodeData Key="15" Location="365 240" NodeType="OutputBit" MemMapAddress="2" NodeDescription="Discharging" />
+    <NodeData Key="3" Location="-215 385" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="6" Location="-60 410" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.TOf" />
+    <NodeData Key="7" Location="-285 505" NodeType="NumericalSource" OutSource="1700" SourceValue="1700" MinValue="0" MaxValue="10000" />
+    <NodeData Key="8" Location="55 465" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="14" Location="95 245" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="4" Location="190 615" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="10" Location="360 460" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Div" />
+    <NodeData Key="16" Location="200 505" NodeType="NumericalSource" OutSource="1100" SourceValue="1100" MinValue="0" MaxValue="10000" />
+    <NodeData Key="17" Location="580 450" NodeType="OutputInt" MemMapAddress="0" NodeDescription="Timer" />
+    <LinkData From="9" To="12" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="5" To="13" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="11" To="15" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="12" To="3" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="2" To="3" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="3" To="6" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="7" To="6" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="6" To="8" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="8" To="14" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="12" To="14" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="14" To="11" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="8" To="4" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="2" To="4" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="4" To="5" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="6" To="10" FromPort="Out-Double-1" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="16" To="10" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="10" To="17" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+  </Diagram>
+</ControlIO>

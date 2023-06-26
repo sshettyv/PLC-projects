@@ -1,0 +1,43 @@
+hotKeys7 7 1
+
+
+\shiftdown\altdown\1\altup\shiftup
+
+
+21495809 38 0 0 1 0 27 0 0
+
+
+\shiftdown\altdown\2\altup\shiftup
+
+
+21823489 39 0 0 1 0 27 0 0
+
+
+\shiftdown\altdown\3\altup\shiftup
+
+
+22020097 40 0 0 1 0 27 0 0
+
+
+\shiftdown\altdown\4\altup\shiftup
+
+
+21692417 37 0 0 1 0 27 0 0
+Disable all hotkeys
+
+1
+
+
+196609 50 0 0 1 0 87 0 0
+Enable
+
+0
+
+
+262145 51 0 0 1 0 87 0 0
+
+
+\shiftdown\altdown\6\altup\shiftup
+
+
+131073 49 0 0 1 0 27 0 0

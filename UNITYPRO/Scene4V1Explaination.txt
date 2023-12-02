@@ -1,4 +1,0 @@
-1.Pressing Start button starts the conveyor
-2.Pressing Stop button stops the conveyor but doesnt reset the counter. 
-3.Emergency Stop button stops the conveyor and also resets the counter to zero, Start button doesnt work while Emergency stop is activated.
- 
